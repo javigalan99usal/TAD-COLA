@@ -1,0 +1,26 @@
+#ifndef COLA_H
+#define COLA_H
+
+#include <stdbool.h>
+
+/* ============== Implementación de un TAD cola con memoria dinámica ============== */
+
+// Definición del tipo de dato para los nodos de la cola
+typedef struct Nodo {
+    int dato;
+    struct Nodo* siguiente;
+} Nodo;
+
+// Definición del tipo de dato Cola
+typedef struct {
+    Nodo* frente;
+    Nodo* final;
+} Cola;
+
+// Prototipos de funciones
+void creaVacia(Cola *cola); // Inicia o crea la pila como una cola vacía sin ningún elemento
+bool vacia(Cola *cola); // Devuelve verdadero si la cola está vacía y falso en caso contrario
+void inserta(int x, Cola *cola); // Inserta un elemento al final de la cola
+int suprime(Cola *cola); // Suprime el elemento que está al inicio de la cola y devuelve su valor
+
+#endif
