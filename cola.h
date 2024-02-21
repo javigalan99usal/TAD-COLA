@@ -18,9 +18,9 @@ typedef struct {
 } Cola;
 
 // Prototipos de funciones
-void creaVacia(Cola *cola); // Inicia o crea la pila como una cola vacía sin ningún elemento
-bool vacia(Cola *cola); // Devuelve verdadero si la cola está vacía y falso en caso contrario
-void inserta(int x, Cola *cola); // Inserta un elemento al final de la cola
-int suprime(Cola *cola); // Suprime el elemento que está al inicio de la cola y devuelve su valor
+void colaCreaVacia(Cola *cola); // Inicia o crea la pila como una cola vacía sin ningún elemento
+bool colaVacia(Cola *cola); // Devuelve verdadero si la cola está vacía y falso en caso contrario
+void colaInserta(int x, Cola *cola); // Inserta un elemento al final de la cola
+int colaSuprime(Cola *cola); // Suprime el elemento que está al inicio de la cola y devuelve su valor
 
 #endif
